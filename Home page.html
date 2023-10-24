@@ -1,0 +1,99 @@
+<!--
+Author: Drew Ferguson
+Student ID: W0192321
+Course: WEBD3100
+Date: 09/30/23
+Project: Basic Responsive HTML Webpage Grid Layout and Tables
+CSS Framework: Bootstrap 5
+License: Creative Commons
+Version: 1.0
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WEBD 3100 Responsive Web Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+
+.row.content {height: 1500px}
+    
+    
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row content">
+      <div class="col-sm-3 sidenav">
+        <h4>Boot Strap Test</h4>
+        <ul class="nav nav-pills nav-stacked">
+          <li class="active"><a href="#section1">Home</a></li>
+          
+        </ul><br>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search Blog..">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </span>
+        </div>
+      </div>
+  
+      <div class="col-sm-9">
+        <h4><small>RECENT POSTS</small></h4>
+        <hr>
+        <h2>Responsive Test</h2>
+        <h5><span class="glyphicon glyphicon-time"></span>By Drew Ferguson, Sept 30th/23.</h5>
+        <h5><span class="label label-danger">Test</span> <span class="label label-primary">Test</span></h5><br>
+        <p>This is a Test of BootStrap after not using it since December 2022.</p>
+        <br><br>
+        
+        
+  
+        <h4>Leave a Comment:</h4>
+        
+          <div class="form-group">
+            <textarea class="form-control" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-success">Submit</button>
+        
+        <br><br>
+        
+        
+           
+        </div>
+      </div>
+    </div>
+  
+<footer class="container-fluid">
+  <p>Footer Test</p>
+</footer>
+
+</body>
+</html>
